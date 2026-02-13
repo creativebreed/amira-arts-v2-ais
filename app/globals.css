@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-pink: #D4145A;
+  --brand-dark: #1A1A1A;
+  --brand-accent: #F2C94C;
+  --brand-bg: #FCFCFC;
+  --brand-border: #E0E0E0;
+}
+
+body {
+  background-color: var(--brand-bg);
+  color: var(--brand-dark);
+}
+
+/* Headings use serif font */
+h1, h2, h3, .font-serif {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom scrollbar for branded containers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--brand-pink);
+  border-radius: 4px;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: var(--brand-pink);
+  color: white;
+}

@@ -1,7 +1,8 @@
+"use client";
 
 import React, { useState } from 'react';
-import { db } from '../services/db';
-import { User } from '../types';
+import { db } from '@/lib/db';
+import { User } from '@/lib/types';
 import { X, Lock, Mail } from 'lucide-react';
 
 interface AuthModalProps {

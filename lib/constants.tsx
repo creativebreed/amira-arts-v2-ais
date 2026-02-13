@@ -12,7 +12,7 @@ export const COLORS = {
 export const LOGO = (
   <div className="flex items-center gap-3 select-none">
     <img 
-      src="./components/Logos/AmiraArts-logo.png" 
+      src="/logos/AmiraArts-logo.png" 
       alt="Amira Arts Gallery 2026" 
       className="h-12 w-auto object-contain block"
       onError={(e) => {

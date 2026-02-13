@@ -1,5 +1,5 @@
 
-import { User, Workshop, Product, Booking, ActivityLog, SubscriptionPlan, CTASection } from '../types';
+import { User, Workshop, Product, Booking, ActivityLog, SubscriptionPlan, CTASection } from '@/lib/types';
 
 const STORAGE_KEYS = {
   USERS: 'amira_users',

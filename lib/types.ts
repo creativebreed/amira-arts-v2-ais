@@ -1,9 +1,12 @@
-
 export type Role = 'admin' | 'artist' | 'customer';
 
 export interface UserSettings {
   notifications: boolean;
+  workshopReminders: boolean;
+  newArtworkAlerts: boolean;
   marketingOptIn: boolean;
+  promoOffers: boolean;
+  personalizedRecs: boolean;
   theme: 'light' | 'dark';
 }
 
@@ -16,6 +19,8 @@ export interface User {
   bio?: string;
   avatar?: string;
   settings?: UserSettings;
+  subscriptionPlanId?: string;
+  subscriptionStartDate?: string;
 }
 
 export interface Workshop {
@@ -39,11 +44,14 @@ export interface Product {
   id: string;
   title: string;
   artistId: string;
+  artistName?: string;
   price: number;
   image: string;
   category: string;
   status: 'available' | 'sold';
   isBoosted?: boolean;
+  description?: string;
+  galleryImages?: string[];
 }
 
 export interface Booking {
@@ -69,6 +77,8 @@ export interface SubscriptionPlan {
   price: number;
   features: string[];
   recommended?: boolean;
+  isActive?: boolean;
+  order?: number;
 }
 
 export interface CTASection {

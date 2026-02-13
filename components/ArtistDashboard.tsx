@@ -1,7 +1,8 @@
+"use client";
 
 import React, { useState, useEffect } from 'react';
-import { db } from '../services/db';
-import { User, Workshop, Product } from '../types';
+import { db } from '@/lib/db';
+import { User, Workshop, Product } from '@/lib/types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Plus, Image as ImageIcon, Users, Wallet, 

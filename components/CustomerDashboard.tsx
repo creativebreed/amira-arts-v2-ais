@@ -1,7 +1,8 @@
+"use client";
 
 import React, { useState, useEffect } from 'react';
-import { db } from '../services/db';
-import { User, Booking, Workshop } from '../types';
+import { db } from '@/lib/db';
+import { User, Booking, Workshop } from '@/lib/types';
 import { Ticket, Star, Clock, MapPin, Edit3, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
